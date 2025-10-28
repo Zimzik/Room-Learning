@@ -10,5 +10,10 @@ fun Application.setupDI() {
     startKoin {
         androidLogger(Level.INFO)
         androidContext(this@setupDI)
+        modules(modules)
     }
 }
+
+private val modules = listOf(
+    databaseModule
+)
