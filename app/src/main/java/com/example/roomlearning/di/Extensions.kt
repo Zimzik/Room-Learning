@@ -15,5 +15,6 @@ fun Application.setupDI() {
 }
 
 private val modules = listOf(
-    databaseModule
+    databaseModule,
+    viewModelsModule
 )
