@@ -62,6 +62,11 @@ dependencies {
     implementation(libs.androidx.room)
     ksp(libs.androidx.room.compiler)
 
+    // DI
+    implementation(project.dependencies.platform(libs.koin.bom))
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
+
     // testing
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
