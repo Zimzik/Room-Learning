@@ -61,7 +61,6 @@ dependencies {
     // database
     implementation(libs.androidx.room)
     ksp(libs.androidx.room.compiler)
-    implementation(libs.androidx.room.testing)
 
     // testing
     androidTestImplementation(libs.androidx.junit)
@@ -70,4 +69,5 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    implementation(libs.androidx.room.testing)
 }
