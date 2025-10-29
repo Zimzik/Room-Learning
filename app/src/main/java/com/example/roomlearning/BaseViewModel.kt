@@ -10,7 +10,7 @@ open class BaseViewModel<S>(state: S) : ViewModel() {
     private val _state = MutableStateFlow(state)
     val state = _state.asStateFlow()
 
-    protected fun updateState(reducer: S.() -> S) {
+    protected fun updateState(reducer: (S) -> S) {
         _state.update(reducer)
     }
 }
